@@ -40,7 +40,7 @@
                 </v-col>
                 <v-col cols="12">
                   <v-text-field
-                    label="Kancelarija*"
+                    label="Ured*"
                     ref="office"
                     v-model="editUserId.office"
                     type="text"
@@ -106,7 +106,7 @@ export default {
           office: this.$refs.office.value,
         }
         this.$store.commit('editUser', user)
-        alert('Uspeno izmenjen user')
+        alert('Uspijesno izmjenjen user')
       } else {
         alert('Polja nisu popunjena')
       }

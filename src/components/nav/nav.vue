@@ -25,12 +25,12 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/vesti">
+          <router-link to="/vijesti">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon color="white">mdi-newspaper</v-icon>
               </v-list-item-icon>
-              <v-list-item-title class="white--text">Vesti</v-list-item-title>
+              <v-list-item-title class="white--text">Vijesti</v-list-item-title>
             </v-list-item>
           </router-link>
 

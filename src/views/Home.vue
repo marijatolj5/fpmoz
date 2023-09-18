@@ -9,7 +9,7 @@
         >
           <v-app-bar flat color="rgba(0, 0, 0, 0)">
             <v-toolbar-title class="text-h6 indigo--text pl-0">
-              Opis rada
+              FPMOZ stranica 
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
@@ -56,67 +56,20 @@ export default {
   data: () => ({
     messages: [
       {
-        message: `marija`,
+        message: `Ova stranica je rezultat rada na kolegiju Informaticki projekt 2.
+         Koristimo Hacker News up koji nam donosi vijesti.
+         Vijesti mogu da se filtriraju po tipu i datumu.`,
       },
       {
-        message: `2 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
-      },
-      {
-        message: `3 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
+        message: `Imamo funkciju pretrazivanje, kako bi nam olaksalo pregledavanje vijesti.`,
       },
           {
-        message: ` 4 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
-      },
-      {
-        message: `5 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
-      },
-      {
-        message: `6 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
-      },
-          {
-        message: ` 7 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
-      },
-      {
-        message: `8 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
-      },
-      {
-        message: `9 Lorem ipsum dolor sit amet 
-        consectetur adipisicing elit. Aspernatur
-         ea sequi perferendis sed officia excepturi, 
-         animi nam? Est animi neque non enim eligendi ipsum qui voluptatem,
-          nisi quam sunt repellendus?`,
+        message: `Imamo CRUD operacije za korisnika, mogućnost dodavanja novog korisnika. 
+        Takoder mozemo raditi izmjene korisnika i brisanje.`,
       },
     ],
-  }),
-};
+    }),
+    };    
 </script>
 
 <style>

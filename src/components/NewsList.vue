@@ -3,13 +3,13 @@
     
     <v-text-field
       solo
-      placeholder="Pretrazi vesti po nazivu"
+      placeholder="Pretrazi vijesti po nazivu"
       v-model="query"
       @input="applyFilters"
     ></v-text-field>
     <div class="calendar-wrapper">
       <div class="calendar-toolbar-wrapper">
-  <v-toolbar-title>Pocetni dan</v-toolbar-title>
+  <v-toolbar-title>Pocetak dana</v-toolbar-title>
     <v-date-picker
       v-model="startDate"
       @change="applyFilters"
@@ -18,7 +18,7 @@
     </div>
           <div class="calendar-toolbar-wrapper">
 
-     <v-toolbar-title>Zavrsni dan</v-toolbar-title>
+     <v-toolbar-title>Kraj dana</v-toolbar-title>
     <v-date-picker v-model="endDate" @change="applyFilters"></v-date-picker>
           </div>
     </div>
@@ -41,13 +41,13 @@
             </v-list-item-title>
 
             <v-list-item-subtitle
-              >Kreirano
+              >Dodano
               {{
                 new Date(item.time * 1000).toLocaleDateString()
               }}</v-list-item-subtitle
             >
             <v-list-item-subtitle>
-              <span v-if="item.by">Kreirao {{ item.by }} </span>
+              <span v-if="item.by">Izradio {{ item.by }} </span>
             </v-list-item-subtitle>
             <v-list-item-subtitle>
               <span v-if="item.by">tip {{ item.type }} </span>

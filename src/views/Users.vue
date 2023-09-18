@@ -40,7 +40,7 @@
                 </v-col>
                 <v-col cols="12">
                   <v-text-field
-                    label="Kancelarija*"
+                    label="Ured*"
                     v-model="office"
                     type="text"
                     required
@@ -64,7 +64,7 @@
               Zatvori
             </v-btn>
             <v-btn color="blue darken-1" text @click="submitUserData()">
-              Sacuvaj
+              Spremi
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -77,9 +77,9 @@
           <tr>
             <th class="text-left white--text">Ime i prezime</th>
             <th class="text-left white--text">Email</th>
-            <th class="text-left white--text">Kancelarija</th>
+            <th class="text-left white--text">Ured</th>
             <th class="text-left white--text">Telefon</th>
-            <th class="text-left white--text">Izmeni korisnika</th>
+            <th class="text-left white--text">Izmjeni korisnika</th>
             <th class="text-left white--text">Obrisi korisnika</th>
           </tr>
         </thead>
@@ -92,7 +92,7 @@
                <td>
               <v-btn color="indigo" @click="openModal(item)" depressed>
                 <v-icon color="white" left> mdi-account-edit-outline </v-icon>
-                <span class="white--text"> Izmeni</span>
+                <span class="white--text"> Izmjeni</span>
               </v-btn>
             </td>
             <td>
@@ -177,7 +177,7 @@ export default {
         this.office = "";
         this.getContacts();
         console.log(this.users);
-        alert("Uspesno sacuvan korisnik");
+        alert("Uspješno spremljeno");
         this.dialog = false;
       } else alert("Popuni sva polja!!");
     },

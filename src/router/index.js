@@ -11,7 +11,7 @@ const routes = [
     component:Home
   },
   {
-    path:'/vesti',
+    path:'/vijesti',
     name:'News',
     component: () =>
       import(
