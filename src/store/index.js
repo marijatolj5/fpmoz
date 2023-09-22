@@ -92,7 +92,7 @@ export default new Vuex.Store({
         const response = await axios.get(
           "https://hacker-news.firebaseio.com/v0/topstories.json"
         );
-        const newsIds = response.data;
+        const newsIds = response.data.splice(0,30);
     
         // Fetch news items and filter based on date
         const newsPromises = newsIds.map(async (id) => {
